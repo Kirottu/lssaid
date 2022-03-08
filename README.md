@@ -12,7 +12,7 @@ Please note that `cargo install` installs the built binaries in `~/.cargo/bin` s
 Here are some common use cases:
 - `lssaid`, list the current files and match them using their filenames. Useful for example in a steam library compatdata folder.
 - `lssaid -i 440 620`, only output the names corresponding to the specified ids.
-- `lssaid -s Portal`, search for steam apps with "Portal" in their name. Please note this is case sensitive.
+- `lssaid -s Portal`, search for steam apps with "Portal" in their name. This is case insensitive.
 
 # Not a valid Steam AppID\*!
 

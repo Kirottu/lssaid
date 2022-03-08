@@ -125,7 +125,12 @@ fn main() {
 
         for object in app_list["applist"]["apps"].as_array().unwrap().iter() {
             for name in &names_to_search {
-                if object["name"].as_str().unwrap().contains(name) {
+                if object["name"]
+                    .as_str()
+                    .unwrap()
+                    .to_lowercase()
+                    .contains(&name.to_lowercase())
+                {
                     match_list.push((
                         object["name"]
                             .as_str()
